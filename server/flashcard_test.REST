@@ -1,0 +1,61 @@
+### Create a Subject
+POST http://localhost:4000/flashcard/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhAaC5jb20iLCJuYW1lIjoiaGVsbG8iLCJpYXQiOjE3MjcxNzQ0MzMsImV4cCI6MTc1ODcxMDQzM30.mGdBkIt8dDaPXvTUOSIohn8akx0_11-4QuhBDVUjG40
+Content-Type: application/json
+
+{
+    "subject": "maths"
+}
+
+### Create a Stack inside the "maths" Subject
+POST http://localhost:4000/flashcard/maths/stacks/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhAaC5jb20iLCJuYW1lIjoiaGVsbG8iLCJpYXQiOjE3MjcxNzQ0MzMsImV4cCI6MTc1ODcxMDQzM30.mGdBkIt8dDaPXvTUOSIohn8akx0_11-4QuhBDVUjG40
+Content-Type: application/json
+
+{
+    "stackName": "Factorisation"
+}
+
+### Add a Flashcard to the "Factorisation" Stack
+POST http://localhost:4000/flashcard/maths/stacks/Factorisation/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhAaC5jb20iLCJuYW1lIjoiaGVsbG8iLCJpYXQiOjE3MjcxNzQ0MzMsImV4cCI6MTc1ODcxMDQzM30.mGdBkIt8dDaPXvTUOSIohn8akx0_11-4QuhBDVUjG40
+Content-Type: application/json
+
+{
+    "question": "What is 2 + 2?",
+    "answer": "4"
+}
+
+### Get all Subjects for the User
+GET http://localhost:4000/flashcard/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhAaC5jb20iLCJuYW1lIjoiaGVsbG8iLCJpYXQiOjE3MjcxNzQ0MzMsImV4cCI6MTc1ODcxMDQzM30.mGdBkIt8dDaPXvTUOSIohn8akx0_11-4QuhBDVUjG40
+Content-Type: application/json
+
+### Get all Flashcards in the "Factorisation" Stack
+GET http://localhost:4000/flashcard/CD/stacks/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhAaC5jb20iLCJuYW1lIjoiaGVsbG8iLCJpYXQiOjE3MjcxNzQ0MzMsImV4cCI6MTc1ODcxMDQzM30.mGdBkIt8dDaPXvTUOSIohn8akx0_11-4QuhBDVUjG40
+Content-Type: application/json
+###
+POST http://localhost:4000/flashcard/Business/stacks/Unit/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhqeWVtbUBpY2xvdWQuY29tIiwibmFtZSI6ImhhcnZleSIsImlhdCI6MTcyNzIwNjg4NiwiZXhwIjoxNzU4NzQyODg2fQ.2eI_-b_vUUBU7NVEjwQJTwosUlGCfwD6WEGt9GIEGF0
+Content-Type: application/json
+
+{
+    "question": "What is an SME",
+    "answer": "Small to medium Business"
+}
+
+###
+DELETE http://localhost:4000/flashcard/Business/stacks/Unit
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhqeWVtbUBpY2xvdWQuY29tIiwibmFtZSI6ImhhcnZleSIsImlhdCI6MTcyNzIwNjg4NiwiZXhwIjoxNzU4NzQyODg2fQ.2eI_-b_vUUBU7NVEjwQJTwosUlGCfwD6WEGt9GIEGF0
+Content-Type: application/json
+
+{
+    "question": "What is an SME"
+}
+
+
+###
+POST  http://localhost:4000/account/dashboard
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhAaC5jb20iLCJuYW1lIjoiaGVsbG8iLCJpYXQiOjE3MjcxNzQ0MzMsImV4cCI6MTc1ODcxMDQzM30.mGdBkIt8dDaPXvTUOSIohn8akx0_11-4QuhBDVUjG40
+Content-Type: application/json

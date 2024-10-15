@@ -1,0 +1,29 @@
+POST http://localhost:3000/account/register
+Content-Type: application/json
+
+{
+    "email": "h",
+    "password": "h",
+    "name": "h"
+}
+###
+GET http://localhost:4000/flashcard
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhAaC5jb20iLCJuYW1lIjoiaGVsbG8iLCJpYXQiOjE3MjcxNzQ0MzMsImV4cCI6MTc1ODcxMDQzM30.mGdBkIt8dDaPXvTUOSIohn8akx0_11-4QuhBDVUjG40
+###
+POST http://localhost:4000/flashcard/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhAaC5jb20iLCJuYW1lIjoiaGVsbG8iLCJpYXQiOjE3MjcxNzQ0MzMsImV4cCI6MTc1ODcxMDQzM30.mGdBkIt8dDaPXvTUOSIohn8akx0_11-4QuhBDVUjG40
+
+{
+    "subject": "maths"
+}
+###
+POST http://localhost:4000/flashcard/subject/maths/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhAaC5jb20iLCJuYW1lIjoiaGVsbG8iLCJpYXQiOjE3MjcxNzQ0MzMsImV4cCI6MTc1ODcxMDQzM30.mGdBkIt8dDaPXvTUOSIohn8akx0_11-4QuhBDVUjG40
+
+
+{
+    "stackName": "Factorisation"
+}

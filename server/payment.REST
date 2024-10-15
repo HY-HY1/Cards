@@ -1,0 +1,8 @@
+### Create Stripe Subscription
+POST http://localhost:4000/payment/subscription 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhqeWVtbUBpY2xvdWQuY29tIiwibmFtZSI6ImhhcnZleSIsImlhdCI6MTcyNzc4NTM5MSwiZXhwIjoxNzU5MzIxMzkxfQ.o9jU6Y8j-1Ca9Ifh-45kYfsX2dDZOj0r97XKVAg54E4
+
+{
+  "priceId": "price_1Q5RKFEobVR8O8G7wrFJovhL"
+}
